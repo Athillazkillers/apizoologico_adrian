@@ -1,0 +1,50 @@
+Crear una nueva noticia
+   POST
+    http://puerto/noticia
+
+   {
+       "titulo": "Título de la noticia",
+       "autor": "Autor",
+       "fechapublicación": "2025-05-11",
+       "encabezado": "Encabezado de la noticia",
+       "Contenido": "Contenido detallado",
+       "revision": "ID de la revisión",
+       "revisó": "Nombre del revisor",
+       "imagen": "URL de la imagen",
+       "categoria": "ID de la categoría"
+   }
+
+ver todas las noticias
+   GET
+   http://puerto/
+
+buscar noticia por ID
+ GET
+    http://puerto/:id
+   
+
+buscar noticias por categoría
+ GET
+    http://puerto/categoria/:categoriaId
+   
+
+Actualizar una noticia
+PUT
+   http://puerto/noticia/:id
+
+   {
+       "titulo": "Nuevo título",
+       "autor": "Nuevo autor",
+       "fechapublicación": "2025-05-12",
+       "encabezado": "Nuevo encabezado",
+       "Contenido": "Nuevo contenido",
+       "revision": "Nuevo ID de la revisión",
+       "revisó": "Nuevo nombre del revisor",
+       "imagen": "Nueva URL de la imagen",
+       "categoria": "Nuevo ID de la categoría"
+   }
+   
+
+eliminar una noticia 
+   DELETE
+    http://<tu-servidor>/noticia/:id
